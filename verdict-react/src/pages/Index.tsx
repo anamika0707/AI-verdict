@@ -178,22 +178,25 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="py-20 px-4 bg-[var(--gradient-hero)] text-primary-foreground">
-        <div className="container mx-auto max-w-4xl text-center">
-          <Scale className="h-16 w-16 mx-auto mb-6 text-secondary" />
-          <h2 className="text-4xl font-bold mb-4">Ready to Test Your Case?</h2>
-          <p className="text-xl mb-8 opacity-90">
-            Join legal professionals using AI Judge to prepare for real courtroom battles.
-          </p>
-          <Button
-            onClick={() => navigate("/case-setup")}
-            size="lg"
-            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold px-8"
-          >
-            Start Your First Case
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-        </div>
-      </section>
+  <div className="container mx-auto max-w-4xl text-center">
+    <Scale className="h-16 w-16 mx-auto mb-6 text-secondary" />
+    <h2 className="text-4xl font-bold mb-4 text-gray-900">
+      Ready to Test Your Case?
+    </h2>
+    <p className="text-xl mb-8 opacity-90 text-gray-800">
+      Join legal professionals using AI Judge to prepare for real courtroom battles.
+    </p>
+    <Button
+      onClick={() => navigate("/case-setup")}
+      size="lg"
+      className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold px-8"
+    >
+      Start Your First Case
+      <ArrowRight className="ml-2 h-5 w-5" />
+    </Button>
+  </div>
+</section>
+
 
       {/* Footer */}
       <footer className="border-t border-border py-8 px-4 bg-card">
